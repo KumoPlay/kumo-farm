@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <path d="M32 58V34" fill="none" stroke="#3D3566" stroke-width="7" stroke-linecap="round"/>
+  <path d="M32 58V34" fill="none" stroke="#6CC489" stroke-width="3" stroke-linecap="round"/>
+  <path d="M32 54c-3-7-10-9-16-7 2 7 8 10 16 7z" fill="#8FD4A0" stroke="#3D3566" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M32 50c3-7 10-9 16-7-2 7-8 10-16 7z" fill="#AEE5B8" stroke="#3D3566" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(6.4 0) scale(.8)">
+    <g fill="#FFD66B" stroke="#3D3566" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="32" cy="12" rx="6.5" ry="10" transform="rotate(0 32 30)"/><ellipse cx="32" cy="12" rx="6.5" ry="10" transform="rotate(45 32 30)"/><ellipse cx="32" cy="12" rx="6.5" ry="10" transform="rotate(90 32 30)"/><ellipse cx="32" cy="12" rx="6.5" ry="10" transform="rotate(135 32 30)"/><ellipse cx="32" cy="12" rx="6.5" ry="10" transform="rotate(180 32 30)"/><ellipse cx="32" cy="12" rx="6.5" ry="10" transform="rotate(225 32 30)"/><ellipse cx="32" cy="12" rx="6.5" ry="10" transform="rotate(270 32 30)"/><ellipse cx="32" cy="12" rx="6.5" ry="10" transform="rotate(315 32 30)"/></g>
+    <circle cx="32" cy="30" r="10" fill="#B9836A" stroke="#3D3566" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M28 28h.01M36 28h.01M32 33h.01" fill="none" stroke="#8C5D49" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>
