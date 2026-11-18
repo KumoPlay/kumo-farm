@@ -329,6 +329,25 @@ export function FarmView({
     );
   };
 
+  /**
+   * Where the 2 × 2 signpost of a locked patch stands: just inside the edge that faces
+   * the farm, so it is seen right next to the island instead of far out in the cloud.
+   */
+  const signSpot = (patch: PatchDef): [number, number] => {
+    const centreX = patch.x + patch.w / 2 - 1;
+    const centreY = patch.y + patch.h / 2 - 1;
+    const inset = 0.3;
+    for (const mine of owned) {
+      const overlapX = patch.x < mine.x + mine.w && mine.x < patch.x + patch.w;
+      const overlapY = patch.y < mine.y + mine.h && mine.y < patch.y + patch.h;
+      if (overlapX && patch.y === mine.y + mine.h) return [centreX, patch.y + inset];
+      if (overlapX && patch.y + patch.h === mine.y) return [centreX, patch.y + patch.h - 2 - inset];
+      if (overlapY && patch.x === mine.x + mine.w) return [patch.x + inset, centreY];
+      if (overlapY && patch.x + patch.w === mine.x) return [patch.x + patch.w - 2 - inset, centreY];
+    }
+    return [centreX, centreY];
+  };
+
   const cloudBox = (patch: PatchDef): Record<string, string> =>
     box(patch.x - 5 / 6, patch.y - 5 / 6, patch.w + 10 / 6, patch.h + 12 / 6);
 
@@ -388,7 +407,7 @@ export function FarmView({
               <button
                 key={`sign-${patch.id}`}
                 class="tile-box thing patch-sign"
-                style={box(patch.x + patch.w / 2 - 1, patch.y + patch.h / 2 - 1, 2, 2)}
+                style={box(...signSpot(patch), 2, 2)}
                 aria-label={
                   locked ? fmt(s.farm.lockedPatch, { n: patch.unlockLevel }) : fmt(s.farm.buyPatch, { n: patch.cost })
                 }

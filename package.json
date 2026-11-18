@@ -12,6 +12,7 @@
     "preview:phone": "vite preview --host",
     "test": "vitest run",
     "test:watch": "vitest",
+    "simulate": "SIM_REPORT=1 vitest run src/sim",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

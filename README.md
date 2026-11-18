@@ -94,6 +94,25 @@ How the numbers fit together:
 - Orders only ask for things the player can make today: animal goods need the animal home, products need the building and every ingredient.
 - Times are written as `30 * SEC`, `2 * MIN`, `3 * HOUR`.
 
+### Checking the pace
+
+```sh
+npm run simulate
+```
+
+A pretend player (`src/sim/player.ts`) plays the real game rules for 90 days on a few visit schedules: once a day for 3 minutes, four quick visits a day, and quick visits plus a 20-minute evening. It prints when each level is reached, how many minutes of play that took, and when each building was bought.
+
+`npm test` also runs these as guard rails, so a balance change that breaks the pace shows up as a failing test:
+
+- Level 2 comes in the first visit and level 3 on the first day, for every player.
+- Every player unlocks everything, and never waits more than a week for the next level along the way.
+- A player who visits a few times a day gets one to three weeks of new things.
+- Every player can afford every animal home and building.
+
+The pretend player is sensible, not perfect, and it does not decorate, so treat its numbers as a guide. Progress mostly follows minutes played: a 3-minute-a-day player moves about a quarter as fast as one who visits four times a day.
+
+With the current numbers, the four-visits-a-day player unlocks everything on day 7, the once-a-day player on day 25, and the evening player on day 6.
+
 ### Swapping in better art
 
 Replace an SVG in `src/art/` and keep its file name. Nothing else changes. Crop, item, animal and 1 × 1 pictures use a `0 0 64 64` viewBox; things that cover 2 × 2 tiles use `0 0 128 128` (64 per tile). `src/art/index.ts` lists the naming rules.
