@@ -8,7 +8,7 @@ A cozy farming game on a floating cloud island, made by KumoPlay. Plant crops, l
 
 Play: <https://kumoplay.github.io/kumo-farm/>
 
-More KumoPlay games: [Peek-a-Kumo](https://kumoplay.github.io/games/peek-a-kumo/), a cozy hidden-object game in a little town on the clouds, and [Kumo Café](https://kumoplay.github.io/games/kumo-cafe/), a cozy café in the clouds. See them all at <https://kumoplay.github.io>.
+More KumoPlay games: [Bubble Pop](https://kumoplay.github.io/games/bubble-pop/), a cozy pocket fidget toy, [Peek-a-Kumo](https://kumoplay.github.io/games/peek-a-kumo/), a cozy hidden-object game in a little town on the clouds, and [Kumo Café](https://kumoplay.github.io/games/kumo-cafe/), a cozy café in the clouds. See them all at <https://kumoplay.github.io>.
 
 ## Run it
 
