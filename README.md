@@ -6,7 +6,9 @@ A cozy farming game on a floating cloud island, made by KumoPlay. Plant crops, l
 - No server, no accounts, no ads, no purchases, no links out, no data collection. The farm is saved in the player's own browser.
 - Chill by design: nothing dies or spoils, nothing is lost while away, and no timer hurries the player.
 
-Play: <https://kumoplay.github.io/kumo-farm/> (once deployed)
+Play: <https://kumoplay.github.io/kumo-farm/>
+
+More KumoPlay games: [Peek-a-Kumo](https://kumoplay.github.io/games/peek-a-kumo/), a cozy hidden-object game in a little town on the clouds, and [Kumo Café](https://kumoplay.github.io/games/kumo-cafe/), a cozy café in the clouds. See them all at <https://kumoplay.github.io>.
 
 ## Run it
 
